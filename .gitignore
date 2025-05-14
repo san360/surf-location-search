@@ -39,3 +39,29 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Editor
+.vscode/
+*.code-workspace
+
+# Misc
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Dependency directories
+jspm_packages/
+
+# Jest
+jest.config.js
+
+# Others
+*.tgz
+*.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Public
+public/*.svg
