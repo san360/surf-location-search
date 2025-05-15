@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# surf-location-search
-Next.js app for surf location search and marine data using Open-Meteo APIs. Features autocomplete, robust error handling, and test coverage.
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-=======
 # Surf Location Search Web App
 
 A modern Next.js web application for searching surf locations, retrieving marine data, and displaying surf conditions using the Open-Meteo APIs. Built with TypeScript, shadcn/ui, and Tailwind CSS.
@@ -31,7 +24,6 @@ A modern Next.js web application for searching surf locations, retrieving marine
 - [Open-Meteo Geocoding API](https://open-meteo.com/en/docs/geocoding-api)
 - [Open-Meteo Marine API](https://open-meteo.com/en/docs/marine-api)
 - [Jest](https://jestjs.io/) for testing
->>>>>>> 89223c0 (docs: add JSDoc comments to all methods and components)
 
 ## Getting Started
 
@@ -89,10 +81,6 @@ public/                 # Static assets
 
 API endpoint URLs are managed in `src/lib/config.ts` for easy updates and environment management.
 
-<<<<<<< HEAD
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 8490772 (Initial commit from Create Next App)
-=======
 ## API Usage
 
 - **Geocoding:**
@@ -117,4 +105,30 @@ Pull requests and issues are welcome!
 ## License
 
 MIT License
+
 >>>>>>> 89223c0 (docs: add JSDoc comments to all methods and components)
+
+Prompt used (Run in Agent mode)
+
+I would like to create a web app for surf location where user can search for location using geocoding api from open meteo which will provide latitude and longitude and based on this use open meto api to get the wave height and wave direction, wave period, wave surface temperature, I would suggest to use next js web app and shadn ui for this, could you create a set of task that needs to be done?
+
+Here’s a set of tasks to create your surf location web app using Next.js and shadcn/ui, with Open-Meteo API integration:
+
+Initialize a new Next.js project.
+Set up TypeScript for type safety.
+Install and configure shadcn/ui for UI components.
+Design the main UI: a search bar for locations and a results display area.
+Integrate a geocoding API (e.g., OpenStreetMap Nominatim or Mapbox) to convert location names to latitude/longitude.
+Create API utility functions to:
+Fetch latitude/longitude from the geocoding API.
+Fetch wave data (height, direction, period, surface temperature) from the Open-Meteo API using the coordinates.
+Build React components for:
+Location search input (with autocomplete, if possible).
+Displaying surf data (wave height, direction, period, temperature).
+Loading and error states.
+Add state management for search, loading, and results.
+Style the app using shadcn/ui components for a modern look.
+Test the app for different locations and handle edge cases (invalid locations, API errors).
+(Optional) Add features like recent searches, favorite locations, or a map view.
+Prepare for deployment (e.g., Vercel).
+Would you like to start with initializing the Next.js project and installing shadcn/ui?
