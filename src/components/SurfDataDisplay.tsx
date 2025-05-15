@@ -59,7 +59,7 @@ export function SurfDataDisplay({ data, location, loading, error }: SurfDataDisp
       <h2 className="text-2xl font-bold mb-4">Surf Data for {location}</h2>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {Object.entries(data).map(([key, value]) => (
-          <Card key={key} className="shadow-md">
+          <Card key={key} className="shadow-md bg-green-100">
             <CardHeader>
               <CardTitle>{key.replace(/([A-Z])/g, ' $1').trim()}</CardTitle>
             </CardHeader>
